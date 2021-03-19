@@ -3,9 +3,9 @@
 </footer>
 </main><!-- /.container -->
 
-<%--@
+
     <script src="./js/bootstrap.bundle.min.js"></script>
-   include file="./js/bootstrap.bundle.min.js" --%>
+  
       
   </body>
 </html>            

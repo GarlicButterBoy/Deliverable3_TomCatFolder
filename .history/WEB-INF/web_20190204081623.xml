@@ -21,9 +21,9 @@
 
 <web-app>
 
-    <display-name>WEBD4201 - Deliverable 3</display-name>
+    <display-name>Bradshaw Marina</display-name>
     <description>
-      Deliverable project for WEBD4201 Course
+      Bradshaw Marina - example project for WEBD4201 Course
     </description>
 
     <servlet>

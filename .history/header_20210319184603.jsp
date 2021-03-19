@@ -36,9 +36,9 @@
     <!-- Custom styles for this template -->
     <link href="./resources/styles.css" rel="stylesheet">
   </head>
-  <body class="text-dark" style="background-color: #e3f2fd;">
+  <body class="bgdark">
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark text-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

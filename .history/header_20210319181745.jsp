@@ -12,9 +12,8 @@
 
     
 
-    <!-- Bootstrap core CSS 
-	<%@ include file="./resources/bootstrap.min.css" %>-->
-<link href="./resources/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+	<%@ include file="./resources/bootstrap.min.css" %>
 
     <style>
       .bd-placeholder-img {
@@ -34,11 +33,11 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="./resources/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
-  <body class="text-dark" style="background-color: #e3f2fd;">
+  <body>
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark text-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

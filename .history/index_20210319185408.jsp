@@ -1,6 +1,6 @@
 <%@ include file="./header.jsp" %>
 
-<div class="center">
+<div>
 	<title>Welcome to WEBD4201 Deliverable</title>
 
 	
@@ -15,7 +15,7 @@
 	boaters. Bradshaw Marina has slips to accommodate up to 450 sailboats
 	and 150 powerboats. </p>
 	<strong>Bradshaw Marina provides:</strong><br>
-	<table cellspacing="5" cellpadding="3">
+	<table class="center" cellspacing="5" cellpadding="3">
 	<tr>
 		<td><li>
 			Docks with electrical service only
