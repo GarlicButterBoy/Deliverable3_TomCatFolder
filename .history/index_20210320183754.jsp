@@ -1,0 +1,30 @@
+<%! String dynamTitle = "Welcome to WEBD4201 Deliverable"; %>
+<%@ include file="./header.jsp" %>
+
+<div class="center">
+	
+
+	
+	<h1style="text-align:center"><em>Welcome to my Home Page!</em></h1style=>
+	<hr/>
+	<h5><%= message %></h5>
+	<hr/>
+	
+	<h4 style="text-align:center">
+		This site is intended for tracking student marks.
+	</h4>
+	
+	<hr/>
+
+	
+	<h5>
+		This is my index page for my WEBD4201 Deliverable. From here you will notice that while you are not logged in, the
+		dynamic navigation bar will only have the login and register pages.
+		<br/><br/>
+		Once logged in you will notice that neither of those buttons exist anymore, instead the navbar is populated with a button to the home (this) page, a dashboard button (only available once logged in), an update button (a unique page that replaces the register for active users), and a logout button.
+
+	</h5>
+	
+</div>
+
+<%@ include file="./footer.jsp" %>
