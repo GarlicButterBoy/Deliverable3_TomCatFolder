@@ -12,9 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
     
-<!-- IMPORTS -->
-<%@ page import="java.util.*" %>
-<%@ page import="webd4201.sturchflintn.*" %>
+
     <!-- Bootstrap core CSS 
 	<%@ include file="./resources/bootstrap.min.css" %>-->
 <link href="./resources/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +33,6 @@
       }
     </style>
 
-<title> <%= dynamTitle %></title>
     
     <!-- Custom styles for this template -->
     <link href="./resources/styles.css" rel="stylesheet">
@@ -78,3 +75,4 @@
 </nav>
 
 <main class="container">
+<title>Welcome to WEBD4201 Deliverable</title>

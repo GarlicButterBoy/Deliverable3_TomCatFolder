@@ -1,4 +1,4 @@
-<%! String dynamTitle = "Welcome to WEBD4201 Deliverable"; %>
+<%! String dynamTitle = "Welcome to WEBD4201 Deliverable"); %>
 <%@ include file="./header.jsp" %>
 
 <div class="center">

@@ -12,9 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
     
-<!-- IMPORTS -->
-<%@ page import="java.util.*" %>
-<%@ page import="webd4201.sturchflintn.*" %>
+<!
     <!-- Bootstrap core CSS 
 	<%@ include file="./resources/bootstrap.min.css" %>-->
 <link href="./resources/bootstrap.min.css" rel="stylesheet">

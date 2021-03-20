@@ -13,7 +13,7 @@
 
     
 <!-- IMPORTS -->
-<%@ page import="java.util.*" %>
+<%@ page import = "java.util.*" %>
 <%@ page import="webd4201.sturchflintn.*" %>
     <!-- Bootstrap core CSS 
 	<%@ include file="./resources/bootstrap.min.css" %>-->
