@@ -28,6 +28,7 @@
     {
       //clean the message so it does not redisplay on a different page
       session.removeAttribute("message");
+
     }
  %>
     <!-- Bootstrap core CSS 

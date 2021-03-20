@@ -24,10 +24,9 @@
     {
       message = ""; //prevents null pointer exceptions
     }
-    else //there was a message but we have a copy
+    else
     {
-      //clean the message so it does not redisplay on a different page
-      session.removeAttribute("message");
+      
     }
  %>
     <!-- Bootstrap core CSS 

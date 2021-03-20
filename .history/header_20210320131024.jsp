@@ -26,7 +26,6 @@
     }
     else //there was a message but we have a copy
     {
-      //clean the message so it does not redisplay on a different page
       session.removeAttribute("message");
     }
  %>

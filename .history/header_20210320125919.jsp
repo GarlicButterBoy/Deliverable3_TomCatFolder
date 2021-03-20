@@ -15,21 +15,7 @@
 <!-- IMPORTS -->
 <%@ page import="java.util.*" %>
 <%@ page import="webd4201.sturchflintn.*" %>
-
-<!-- SESSIONS STUFF -->
-<%
-   // public HttpSession session = HttpServletRequest.getSession(); 
-    String message = (String)session.getAttribute("message");
-    if (message == null)
-    {
-      message = ""; //prevents null pointer exceptions
-    }
-    else //there was a message but we have a copy
-    {
-      //clean the message so it does not redisplay on a different page
-      session.removeAttribute("message");
-    }
- %>
+<% HttpServletRequest.getSession() %>
     <!-- Bootstrap core CSS 
 	<%@ include file="./resources/bootstrap.min.css" %>-->
 <link href="./resources/bootstrap.min.css" rel="stylesheet">
