@@ -49,6 +49,6 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>/Register</url-pattern>
+        <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
 </web-app>

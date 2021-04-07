@@ -30,10 +30,7 @@
 	}
 
 	if (passwd == null)
-	{
-		passwd = "";
-		confPasswd = "";
-	}
+	
 %>
 
 <div class="center">
@@ -45,7 +42,7 @@
 	<h5 style="text-align:center"><%= message %></h5>
 	<h4 style="text-align:center"><%= error %></h4>
 	<hr>
-	<form class="form-signin" method="GET" action="./Register">
+	<form class="form-signin" method="POST" action="./Register">
 
 
     	<h1 class="h3 mb-3 font-weight-normal">Please Enter your information below to register</h1>

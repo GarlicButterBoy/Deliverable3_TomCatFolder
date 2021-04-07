@@ -45,7 +45,6 @@ public class LoginServlet extends HttpServlet
                 id = request.getParameter( "Login" ); //this is the name of the text input box on the form
                 password = request.getParameter( "Password" ); //this is the name of the text input box on the form
                 long validID = Long.parseLong(id);
-                //StringBuffer messageBuffer = new StringBuffer();
 
                 Student aStudent = Student.authenticate(validID, password); //if the ID exists, AND the password is correct
                 // if the Student was found and retrieved from the db
@@ -55,13 +54,10 @@ public class LoginServlet extends HttpServlet
                 //empty out any errors if there were some
                 session.setAttribute("errors", "");
 
-               // messageBuffer.append("Welcome Back " + session.getAttribute("FName") + "!");
-               // messageBuffer.append("This dashboard is only accesssible when you're properly logged in, so congrats!");
-                //String message = messageBuffer.toString();
                 // redirect the user to a JSP
                 response.sendRedirect("./dashboard.jsp");
                 session.setAttribute("message", "Welcome Back " + session.getAttribute("FName") + "!");
-            }catch( NotFoundException nfe)
+            }catch( NotFoundException nfe) //incorrect login information
             {
                 long validID = Long.parseLong(id);
                 //sending errors to the page thru the session
@@ -86,13 +82,44 @@ public class LoginServlet extends HttpServlet
                 //this will require a special method e.g. public static boolean isExistingLogin(String arg);
             }
         }
-        catch (Exception e) //not connected
+        catch (Exception e) //not connected OR incorrect login information
         {
+            HttpSession session = request.getSession(true);
+
+            String id = new String();
+            String password = new String();
+
             System.out.println(e);
-            String line1="<h2>A network error has occurred!</h2>";
-            String line2="<p>Please notify your system " +
-                    "administrator and check log. "+e.toString()+"</p>";
-            formatErrorPage(line1, line2,response);
+
+            id = request.getParameter( "Login" ); //this is the name of the text input box on the form
+            password = request.getParameter( "Password" ); //this is the name of the text input box on the form
+
+            long validID = Long.parseLong(id);
+            //sending errors to the page thru the session
+            StringBuffer errorBuffer = new StringBuffer();
+            errorBuffer.append("<strong>Your sign in information is not valid.<br/>");
+            errorBuffer.append("Please try again.</strong>");
+            try {
+                if(Student.retrieve(validID) != null)
+                {
+                    session.setAttribute("id", validID);
+                    errorBuffer.append("Invalid Password.</strong>");
+                }
+                else
+                {
+                    errorBuffer.append("Invalid login id.</strong>");
+                    session.setAttribute("id", "");
+                }
+            } catch (Exception e1)
+            {
+                e1.printStackTrace();
+            }
+            session.setAttribute("errors", errorBuffer.toString());
+            response.sendRedirect("./login.jsp");
+
+            //for the first deliverable you will have to check if there was a problem
+            //with just the password, or login id and password
+            //this will require a special method e.g. public static boolean isExistingLogin(String arg);
         }
     }
 
@@ -105,7 +132,8 @@ public class LoginServlet extends HttpServlet
      */
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException
+    {
         doPost(request, response);
     }
 

@@ -35,8 +35,8 @@
         <servlet-class>webd4201.sturchflintn.LogoutServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>webd4201.sturchflintn.RegisterServlet</servlet-class>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>webd4201.sturchflintn.LogoutServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
@@ -46,9 +46,5 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/Logout</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RegisterServlet</servlet-name>
-        <url-pattern>/Register</url-pattern>
     </servlet-mapping>
 </web-app>

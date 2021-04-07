@@ -4,10 +4,10 @@
 <%
 	String emailAddress = (String)session.getAttribute("EmailAddress");
 	String firstName    = (String)session.getAttribute("FName");
-	String id			= (String)session.getAttribute("id");
+	String id	= (String)session.getAttribute("id");
 	String lastName     = (String)session.getAttribute("LName");
-	String passwd		= (String)session.getAttribute("password");
-	String confPasswd   = (String)session.getAttribute("password");
+	String passwd
+	String confPasswd   = (String)session.getAttribute("password")
 
 	if (id == null)
 	{
@@ -23,17 +23,6 @@
 	{
 		firstName = "";
 	}
-
-	if (lastName == null)
-	{
-		lastName = "";
-	}
-
-	if (passwd == null)
-	{
-		passwd = "";
-		confPasswd = "";
-	}
 %>
 
 <div class="center">
@@ -45,7 +34,7 @@
 	<h5 style="text-align:center"><%= message %></h5>
 	<h4 style="text-align:center"><%= error %></h4>
 	<hr>
-	<form class="form-signin" method="GET" action="./Register">
+	<form class="form-signin" method="POST" action="./Register">
 
 
     	<h1 class="h3 mb-3 font-weight-normal">Please Enter your information below to register</h1>
